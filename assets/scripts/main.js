@@ -8,7 +8,7 @@ function init() {
   // Get the recipes from localStorage
   let recipes = getRecipesFromStorage();
   // Add each recipe to the <main> element
-  addRecipesToDocument(recipes);
+  if(recipes.length > 0){ addRecipesToDocument(recipes);}
   // Add the event listeners to the form elements
   initFormHandler();
 }
